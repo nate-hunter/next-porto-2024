@@ -1,95 +1,50 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Button } from '../components/Button';
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+import styles from './page.module.css';
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+export default function Page() {
+    return (
+        <main>
+            <header>
+                <h1 className={styles.identityHeader}>NATE HUNTER</h1>
+                <section className={styles.identityTags}>
+                    <span className={styles.identityTag}>Developer</span> <span>•</span>{' '}
+                    <span className={styles.identityTag}>Designer</span> <span>•</span>{' '}
+                    <span className={styles.identityTag}>Engineer</span> <span>•</span>{' '}
+                    <span className={styles.identityTag}>Architect</span> <span>•</span>{' '}
+                    <span className={styles.identityTag}>Craftsmen</span> <span>•</span>{' '}
+                    <span className={styles.identityTag}>Builder</span>
+                </section>
+            </header>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            <section>
+                <div className={styles.techContainer}>
+                    <div className={styles.pillSkill}>
+                        <span>O</span>
+                        <span>Full Stack</span>
+                    </div>
+                </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+                {/* <h3>Current Role:</h3> */}
+                <p>
+                    Currently, I am building and maintaining internal apps and design systems as a
+                    full-stack developer at iNDEMAND.
+                </p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+                <p>
+                    I’m open to connect to explore opportunities or have a conversation, especially
+                    about tech trends, the NBA, NFL, or the UFC, among others.
+                </p>
+            </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+            <footer>
+                <div>
+                    <span>GitHub</span>
+                    <span>LinkedIn</span>
+                </div>
+
+                <Button>Contact</Button>
+            </footer>
+        </main>
+    );
 }
