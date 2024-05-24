@@ -56,18 +56,35 @@
 
 :root {
     /* COLORS  */
-    --color-text-light: #1d1d25;
-    --color-text-dark: #fff;
-    --color-bg-dark-1: #121212;
-
-    --color-default-gray-1: #e4e8f1;
-    --color-primary-1: #e4ff38;
+    --color-default-gray: #e4e8f1;
+    --color-primary: #e4ff38;
+    --color-compl: #5338ff;
+    --color-analogous-1: #ffb738;
+    --color-analogous-2: #81ff38;
+    --color-split-compl-1: #b738ff;
+    --color-split-compl-2: #3881ff;
+    --color-triad-1: #ff38e4;
+    --color-triad-2: #38e4ff;
+    --color-tetrad-1: #ff5338;
+    --color-tetrad-2: var(--color-triad-2);
+    --color-tetrad-3: var(--color-compl);
 
     --mtw-blue-1: #161a33;
     --mtw-blue-2: #202954;
     --mtw-blue-3: #202e6b;
     --mtw-gray-1: #57586a;
     --mtw-gray-2: #e0e2f1;
+
+    --color-text-light: #1d1d25;
+    --color-text-dark: #fff;
+    --color-bg-dark-1: #121212;
+    /* --color-bg-dark-1: #0e1100; */
+    /* --color-bg-dark-1: var(--mtw-blue-1); */
+    --color-bg-light-1: #fff;
+
+    --color-link: var(--color-split-compl-2);
+    --color-link: var(--color-primary);
+    --color-link: var(--color-triad-2);
 
     /* FONTS */
     --font-poppins: 'Poppins';
@@ -82,14 +99,18 @@
     --font-rosario-bold: 'Rosario Bold';
 
     /* GENERAL */
-    background-color: var(--color-bg-dark-1);
-    color: var(--color-text-dark);
-    font-family: var(--font-poppins), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --disabled-opacity: 0.65;
+
+    --border-straight: 0.25rem;
+    --border-rounded: 0.8rem;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--color-bg-dark-1);
+    color: var(--color-text-dark);
+    font-family: var(--font-poppins), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
