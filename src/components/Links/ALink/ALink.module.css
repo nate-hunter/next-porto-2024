@@ -1,0 +1,13 @@
+.link {
+    color: var(--color-link);
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    border-radius: 1px;
+}
+
+.link:hover {
+    filter: brightness(0.8);
+    --a-hover-color: var(--color-split-compl-2);
+    background-color: var(--color-bg-light-1);
+    color: var(--a-hover-color);
+}
