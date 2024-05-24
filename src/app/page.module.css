@@ -1,3 +1,16 @@
+.mainPage {
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
 .identityHeader {
     font-family: var(--font-rosario-bold);
     font-size: 96px;
@@ -16,6 +29,18 @@
 .identityTag:hover {
     background-color: var(--color-text-dark);
     color: var(--color-text-light);
+    animation: animateIdentityTag 300ms linear forwards;
+}
+
+@keyframes animateIdentityTag {
+    0% {
+        background-color: transparent;
+        width: 0;
+    }
+    100% {
+        background-color: var(--color-text-dark);
+        width: 100%;
+    }
 }
 
 .techContainer {
@@ -30,5 +55,25 @@
     width: fit-content;
     padding: 10px 16px;
     border-radius: 100px;
-    border: 1px solid var(--color-default-gray-1);
+    border: 1px solid var(--color-default-gray);
+}
+
+@media (max-width: 700px) {
+    .mainPage {
+        padding: 64px 32px 24px;
+        row-gap: 2rem;
+    }
+
+    .headerContainer {
+        row-gap: 2rem;
+    }
+
+    .identityHeader {
+        font-size: 60px;
+    }
+
+    .identityTags,
+    .aboutSectionParagraph {
+        font-size: 14px;
+    }
 }
